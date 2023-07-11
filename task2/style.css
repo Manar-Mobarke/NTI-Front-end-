@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4em;
+    background-image: linear-gradient(120deg, #1C315E,#227C70 );
+}
+#parent{
+    /* width: 800px; */
+    max-width: 800px;
+    /* padding: 25px 40px 10px 40px; */
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+/* Header */
+header {
+    background-color: #E7F6F2;
+    color: #395B64;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    /* font-size: 40px;  */
+}
+
+h1{
+    font-size: 1.4em;
+}
+
+/* Form */
+form{
+    padding: 25px 40px 10px 40px;
+}
+
+#parent .row{
+    display: flex;
+    margin: 20px 0;
+}
+
+#parent .row .input-data{
+    width: 100%;
+    min-height: 40px;
+    margin: 0 20px;
+}
+
+
+
+
+label, h2{
+    color: #227C70;
+    font-size: 20px;
+    /* position: absolute; */
+    /* bottom: 10px; */
+    width: 50%;
+    font-weight: 700;
+}
+
+/* input style */
+
+input[type=text], input[type=password], input[type=file],input[type=number],input[type=email]{
+    width:100%;
+    padding: 5px 8px;
+    margin-top: 5px;
+    border: #395b6435 solid 1px;
+    border-radius: 5px;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover,input[type=number]:hover,input[type=email]:hover{
+    border: #253539 solid 1px;
+}
+
+
+/* label checkbox, radio */
+
+.gray> label{
+    color: #395B64;
+    font-size: 18px;
+    font-weight: 500;
+    /* display: flex; */
+}
+/* source of income option */
+select{
+    display: block;
+    color: gray;
+    border: 1px #395b6435 solid;
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+    margin-top: 5px;
+}
+/* income label */
+input[type=range]{
+    width: 100%;
+}
+#income {
+    width: 100%;
+    display: flex;
+}
+.income{
+    background: #227C70;
+    color: #E7F6F2;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+}
+
+/* textarea */
+.textarea textarea{
+    display: block;
+    /* height: 100%; */
+    width: 100%;
+    /* border: #353e3e solid; */
+    font-size: 18px;
+    border: #25353956 1px solid;
+}
+
+.textarea textarea:hover{
+    border: #253539d0 1px solid;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2c333351;
+    background-color: #E7F6F2;
+    padding: 4px 20px;
+    border-radius: 0 0 20px 20px; 
+    height: 60px;
+    padding: 5px 40px;
+}
+
+footer input[type=submit]{
+    border: solid #395b6400;
+    background-color: #395B64;
+    color: #E7F6F2;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 2px;
+}
