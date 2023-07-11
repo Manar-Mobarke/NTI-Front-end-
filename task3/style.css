@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: 16px; */
+    /* background-image: linear-gradient(160deg, rgb(232, 50, 93), #a70bc6d0); */
+}
+
+.parent{
+    background-image: linear-gradient(160deg, rgb(232, 50, 93), #a70bc6d0);
+    padding: 2.2em 4em;
+}
+/* Style navbar */
+nav{
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+    background-color: #fcc72d;
+    padding: .5em 3.5em;
+    /* margin: 0.5em ; */
+    font-size: 1.1em ;
+    font-weight: 600;
+    flex: 0 0 18%;
+    max-width: 18%;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+/* start Header style */
+header{
+    width: 100%;
+    min-height: 17rem;
+    display: flex;
+    margin-top: 1.4em;
+    justify-content: space-between;
+    /* height: 15rem; */
+    
+}
+
+header .img{
+    width: 75%;
+    display: block;
+    background-image: url(./img/AdobeStock_471204584.jpeg);
+    background-size: cover;
+    margin-right: 10px;
+}
+
+header .img h2, header .img h3{
+    background: #fcc72d;
+    display: inline-block;
+    margin-top: 30px ;
+    margin-left: 60px;
+    padding: 3px;
+} 
+
+header .img h2{
+    margin-top: 80px ;
+}
+
+header .cost{
+    width: 25%;
+    text-align: center;
+    height: 100%;
+}
+header .cost1{
+    height: 40%;
+    background: #fcc72d;
+    padding: 40px 0;
+    /* margin-bottom: 10px; */
+
+}
+
+header .first{
+    margin-bottom: 10px;
+}
+
+header .cost1 h2 {
+
+    font-weight: 500;
+    font-size: 1.8em;
+    
+}
+
+header .cost1 h3{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* end of header style */
+
+/* start 2nd section */
+section{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
+section .nd_sec{
+    /* width:15%; */
+    padding: 1em;
+    margin: .5em 0 .5em 0.5em;
+    text-align: center;
+    background-color: white;
+    /* display: flex;
+    flex-wrap: wrap; */
+
+}
+
+section .one{
+    margin: .5em 0 .5em 0em;
+}
+
+i{
+    font-size: 35px;
+    color: #fcc72d;
+}
+
+/* i .yellow{
+    
+}
+
+.nd_sec i .blue{
+    color: aqua;
+} */
+
+/* end 2nd section */
+
+
+/* 3rd section */
+.three{
+    width: 100%;
+    background: white;
+    display: flex;
+    /* min-height: 2em; */
+    padding: 2em;
+
+}
+
+.three .img{
+    width: 30%;
+    
+}
+
+img{
+    width: 100%;
+}
+
+.three .content{
+    width: 30%;
+    /* display: flex; */
+}
+
+.three .content h2{
+    margin: 20px 0 ;
+}
+
+.three .content p{
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.three .content input{
+    padding: .5em 1.2em ;
+    background-color: #fcc82dc2;
+    border: #fcc82dc2 solid .2em;
+    border-radius: 3px;
+    transition: 3s;
+}
+
+.three .content input:hover{
+    background-color: #fcc72d;
+    border: #fcc72d solid .2em;
+    border-radius: 8px;
+}
+
+/* end 3rd section */
+
+
+/* Instant Grams container */
+.container{
+    width: 100%;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .line{
+    /* background-image: linear-gradient(to left,#fcc72d,#fcc82d00); */
+    width: 42%;
+    /* display: flex;
+    align-items: center; */
+    height: .5em;
+
+}
+.container .one{
+    background-image: linear-gradient(to left,#fcc72d,#fcc82d00);
+}
+
+.container .two{
+    background-image: linear-gradient(to right,#fcc72d,#fcc82d00)
+}
+
+.container h2{
+    /* width: 5em; */
+    margin: .4em;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* start images style*/
+.images{
+    width: 100%;
+    /* display: flex; */
+}
+
+.images div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images img{
+    width: 19%;
+    margin: .5em 0 .5em .5em;
+}
+.images .one{
+    margin: .5em 0 .5em 0em;
+}
+
+/* ============== Responsive   ============  */
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    /* nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    nav a{
+        font-size: .7em;
+        max-width: 18% ;
+        padding: 3px 13px;
+        /* display: flex;
+        margin: auto;
+        text-align: center; */
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px){
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* navbar style */
+    nav a{
+        font-size: 1em;
+        max-width: 28% ;
+        font-weight: 700;
+        padding: 5px 15px;
+        /* display: flex;
+        margin: auto;
+        text-align: center; */
+    }
+
+    /* 2nd section */
+    section .nd_sec h3{
+        font-size: 1em;
+    }
+
+    section .nd_sec p{
+        font-size: .8em;
+    }
+
+    section .nd_sec i{
+        font-size: 26px;
+        padding-bottom: 16px;
+    }
+
+    section .nd_sec img{
+        width: 28px;
+    }
+
+    .images img{
+        width: 18%;
+        justify-content: space-between;
+    }
+
+    /* 3rd section */
+    .three .img{
+        width: 40%;
+        margin-top: 3rem;
+    }
+
+    .three .content{
+        width: 54%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    nav a{
+        font-size: 1.1em;
+        max-width: 35% ;
+        font-weight: 700;
+        padding: 8px 15px;
+        /* display: flex;
+        margin: auto;
+        text-align: center; */
+    }
+
+    /* 2nd section */
+    section .nd_sec h3{
+        font-size: 1.2em;
+    }
+
+    section .nd_sec p{
+        font-size: .9em;
+    }
+
+    section .nd_sec i{
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+
+    section .nd_sec img{
+        width: 30px;
+    }
+
+    .images img{
+        width: 18.5%;
+        justify-content: space-between;
+    }
+
+    /* 3rd section */
+    .three .img{
+        width: 30%;
+        margin-top: 2rem;
+    }
+
+    .three .content{
+        width: 55%;
+        margin-left: 30px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .images img{
+        width: 20%;
+        justify-content: space-between;
+    }
+
+    /* 3rd section */
+    .three .img{
+        width: 40%;
+        margin-top: .4rem;
+    }
+
+    .three .content{
+        width: 55%;
+        margin-left: 30px;
+    }
+
+    
+}
